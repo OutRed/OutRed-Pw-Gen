@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Fullpage Website</title>
+    <!-- include the Fullpage.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.0.9/dist/fullpage.min.js"></script>
+    <!-- include the Fullpage.js stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@3.0.9/dist/fullpage.min.css">
+    <!-- add custom CSS styles -->
+    <style>
+      /* style the sections */
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      /* style the section headers */
+      h2 {
+        font-size: 36px;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+      }
+      /* style the section paragraphs */
+      p {
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+      }
+      /* style the first section */
+      .section.fp-auto-height {
+        background-color: #3498db;
+      }
+      /* style the second section */
+      .section.fp-auto-height:nth-of-type(2) {
+        background-color: #e67e22;
+      }
+      /* style the third section */
+      .section.fp-auto-height:nth-of-type(3) {
+        background-color: #2ecc71;
+      }
+      /* style the fourth section */
+      .section.fp-auto-height:nth-of-type(4) {
+        background-color: #9b59b6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- define the Fullpage.js container element -->
+    <div id="fullpage">
+      <!-- define the sections for the Fullpage.js layout -->
+      <div class="section">
+        <!-- add content for the first section here -->
+        <h2>Welcome to my website!</h2>
+      </div>
+      <div class="section">
+        <!-- add content for the second section here -->
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales, elit ut dignissim placerat, tortor est lacinia nibh, at sodales risus metus at velit. Quisque et eleifend mauris, vel vestibulum libero. Aliquam venenatis sapien sit amet lorem lobortis, non pellentesque purus tincidunt. Ut ultricies tellus ut turpis aliquam malesuada.</p>
+      </div>
+      <div class="section">
+        <!-- add content for the third section here -->
+        <h2>My Work</h2>
+        <p>Lorem
